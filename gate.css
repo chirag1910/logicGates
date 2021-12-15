@@ -97,3 +97,32 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+@media only screen and (max-width: 500px) {
+    .cardContainer {
+        padding: 10px;
+    }
+
+    .switch {
+        width: 45px;
+        height: 24px;
+    }
+
+    .slider:before {
+        height: 17px;
+        width: 17px;
+        left: 4px;
+        bottom: 4px;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+}
