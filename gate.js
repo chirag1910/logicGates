@@ -1,30 +1,37 @@
 const data = {
     and: {
         title: "AND",
+        formula: "A.B",
         description: `The AND gate is so named because, if 0 is called "false" and 1 is called "true," the gate acts in the same way as the logical "and" operator. The following illustration and table show the circuit symbol and logic combinations for an AND gate. (In the symbol, the input terminals are at left and the output terminal is at right.) The output is "true" when both inputs are "true." Otherwise, the output is "false." In other words, the output is 1 only when both inputs one AND two are 1.`,
     },
     or: {
         title: "OR",
+        formula: "A+B",
         description: `The OR gate gets its name from the fact that it behaves after the fashion of the logical inclusive "or." The output is "true" if either or both of the inputs are "true." If both inputs are "false," then the output is "false." In other words, for the output to be 1, at least input one OR two must be 1.`,
     },
     not: {
         title: "NOT",
+        formula: "A'",
         description: `A logical inverter, sometimes called a NOT gate to differentiate it from other types of electronic inverter devices, has only one input. It reverses the logic state. If the input is 1, then the output is 0. If the input is 0, then the output is 1.`,
     },
     nand: {
         title: "NAND",
+        formula: "(A.B)'",
         description: `The NAND gate operates as an AND gate followed by a NOT gate. It acts in the manner of the logical operation "and" followed by negation. The output is "false" if both inputs are "true." Otherwise, the output is "true."`,
     },
     nor: {
         title: "NOR",
+        formula: "(A+B)'",
         description: `The NOR gate is a combination OR gate followed by an inverter. Its output is "true" if both inputs are "false." Otherwise, the output is "false."`,
     },
     xor: {
         title: "XOR",
+        formula: "A⊕B",
         description: `The XOR ( exclusive-OR ) gate acts in the same way as the logical "either/or." The output is "true" if either, but not both, of the inputs are "true." The output is "false" if both inputs are "false" or if both inputs are "true." Another way of looking at this circuit is to observe that the output is 1 if the inputs are different, but 0 if the inputs are the same.`,
     },
     xnor: {
         title: "XNOR",
+        formula: "(A⊕B)'",
         description: `The XNOR (exclusive-NOR) gate is a combination XOR gate followed by an inverter. Its output is "true" if the inputs are the same, and "false" if the inputs are different.`,
     },
 };
@@ -63,40 +70,50 @@ const getOutput = (gate, a = false, b = false) => {
 const setHero = () => {
     let heroTitle = document.getElementById("heroTitle");
     let heroDesc = document.getElementById("heroDesc");
+    let heroFormula = document
+        .getElementById("heroFormula")
+        .querySelector("span");
 
     switch (gate.toLowerCase()) {
         case "and":
             heroTitle.innerText = `${data.and.title} Gate`;
+            heroFormula.innerText = data.and.formula;
             heroDesc.innerText = data.and.description;
             break;
 
         case "or":
             heroTitle.innerText = `${data.or.title} Gate`;
+            heroFormula.innerText = data.or.formula;
             heroDesc.innerText = data.or.description;
             break;
 
         case "not":
             heroTitle.innerText = `${data.not.title} Gate`;
+            heroFormula.innerText = data.not.formula;
             heroDesc.innerText = data.not.description;
             break;
 
         case "nand":
             heroTitle.innerText = `${data.nand.title} Gate`;
+            heroFormula.innerText = data.nand.formula;
             heroDesc.innerText = data.nand.description;
             break;
 
         case "nor":
             heroTitle.innerText = `${data.nor.title} Gate`;
+            heroFormula.innerText = data.nor.formula;
             heroDesc.innerText = data.nor.description;
             break;
 
         case "xor":
             heroTitle.innerText = `${data.xor.title} Gate`;
+            heroFormula.innerText = data.xor.formula;
             heroDesc.innerText = data.xor.description;
             break;
 
         case "xnor":
             heroTitle.innerText = `${data.xnor.title} Gate`;
+            heroFormula.innerText = data.xnor.formula;
             heroDesc.innerText = data.xnor.description;
             break;
 
