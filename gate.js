@@ -205,7 +205,7 @@ const gate = urlParams.get("g");
 
 if (
     !["and", "or", "not", "nand", "nor", "xor", "xnor"].includes(
-        gate.toLowerCase()
+        gate?.toLowerCase()
     )
 ) {
     window.location = "404.html";
