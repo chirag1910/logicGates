@@ -110,6 +110,10 @@ input:checked + .slider:before {
         padding: 10px;
     }
 
+    .card img {
+        max-width: 50%;
+    }
+
     .card #indicator h2 {
         left: -30%;
     }
