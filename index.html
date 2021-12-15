@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Logic Gates</title>
+</head>
+
+<body>
+
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path xmlns="http://www.w3.org/2000/svg"
+                        d="M10,13a1,1,0,1,0,1,1A1,1,0,0,0,10,13Zm0-4a1,1,0,1,0,1,1A1,1,0,0,0,10,9Zm4,0a1,1,0,1,0,1,1A1,1,0,0,0,14,9Zm7,4a1,1,0,0,0,0-2H19V9h2a1,1,0,0,0,0-2H18.82A3,3,0,0,0,17,5.18V3a1,1,0,0,0-2,0V5H13V3a1,1,0,0,0-2,0V5H9V3A1,1,0,0,0,7,3V5.18A3,3,0,0,0,5.18,7H3A1,1,0,0,0,3,9H5v2H3a1,1,0,0,0,0,2H5v2H3a1,1,0,0,0,0,2H5.18A3,3,0,0,0,7,18.82V21a1,1,0,0,0,2,0V19h2v2a1,1,0,0,0,2,0V19h2v2a1,1,0,0,0,2,0V18.82A3,3,0,0,0,18.82,17H21a1,1,0,0,0,0-2H19V13Zm-4,3a1,1,0,0,1-1,1H8a1,1,0,0,1-1-1V8A1,1,0,0,1,8,7h8a1,1,0,0,1,1,1Zm-3-3a1,1,0,1,0,1,1A1,1,0,0,0,14,13Z" />
+                </svg>
+                <span class="ml-3 text-xl">Logic Gates</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Basic logic gates</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">A logic gate is an idealized model of computation
+                    or physical electronic device implementing a Boolean function, a logical operation performed on one
+                    or more binary inputs that produces a single binary output.</p>
+            </div>
+            <div class="flex flex-wrap -m-4 text-center">
+                <a href="./gate.html?g=and" class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div
+                        class="border-2 border-gray-200 px-4 py-6 rounded-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="./assets/and.png" alt="and gate" width="90px" style="margin:auto" />
+                        <h2 class=" title-font font-medium text-3xl text-gray-900">AND</h2>
+                    </div>
+                </a>
+
+                <a href="./gate.html?g=or" class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div
+                        class="border-2 border-gray-200 px-4 py-6 rounded-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="./assets/or.png" alt="or gate" width="90px" style="margin:auto" />
+                        <h2 class=" title-font font-medium text-3xl text-gray-900">OR</h2>
+                    </div>
+                </a>
+
+                <a href="./gate.html?g=not" class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div
+                        class="border-2 border-gray-200 px-4 py-6 rounded-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="./assets/not.png" alt="not gate" width="90px" style="margin:auto" />
+                        <h2 class=" title-font font-medium text-3xl text-gray-900">NOT</h2>
+                    </div>
+                </a>
+
+                <a href="./gate.html?g=nand" class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div
+                        class="border-2 border-gray-200 px-4 py-6 rounded-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="./assets/nand.png" alt="nand gate" width="90px" style="margin:auto" />
+                        <h2 class=" title-font font-medium text-3xl text-gray-900">NAND</h2>
+                    </div>
+                </a>
+
+                <a href="./gate.html?g=nor" class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div
+                        class="border-2 border-gray-200 px-4 py-6 rounded-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="./assets/nor.png" alt="nor gate" width="90px" style="margin:auto" />
+                        <h2 class=" title-font font-medium text-3xl text-gray-900">NOR</h2>
+                    </div>
+                </a>
+
+                <a href="./gate.html?g=xor" class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div
+                        class="border-2 border-gray-200 px-4 py-6 rounded-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="./assets/xor.png" alt="xor gate" width="90px" style="margin:auto" />
+                        <h2 class=" title-font font-medium text-3xl text-gray-900">XOR</h2>
+                    </div>
+                </a>
+
+                <a href="./gate.html?g=xnor" class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div
+                        class="border-2 border-gray-200 px-4 py-6 rounded-lg hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="./assets/xnor.png" alt="xnor gate" width="90px" style="margin:auto" />
+                        <h2 class=" title-font font-medium text-3xl text-gray-900">XNOR</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
